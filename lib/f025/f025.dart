@@ -94,35 +94,23 @@ class F025 extends StatelessWidget {
                               text_widget(
                                   text: 'Floor and stairway free of clutter',
                                   size: 16.0),
-                              Radio(
+                              Radio_Widget(
                                 value: 'yes',
-                                groupValue: controller.selectedValue_1,
-                                onChanged: (val) {
-                                  controller.onChangeValue_1(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_1,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_1(p0),
                               ),
-                              Radio(
+                              Radio_Widget(
                                 value: 'no',
-                                groupValue: controller.selectedValue_1,
-                                onChanged: (val) {
-                                  controller.onChangeValue_1(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_1,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_1(p0),
                               ),
-                              Radio(
+                              Radio_Widget(
                                 value: 'na',
-                                groupValue: controller.selectedValue_1,
-                                onChanged: (val) {
-                                  controller.onChangeValue_1(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_1,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_1(p0),
                               ),
                               text_field_widget(
                                   textController: controller.comment_1,
@@ -133,35 +121,23 @@ class F025 extends StatelessWidget {
                               text_widget(
                                   text: 'Rug and carpets firmly in place',
                                   size: 16.0),
-                              Radio(
+                              Radio_Widget(
                                 value: 'yes',
-                                groupValue: controller.selectedValue_2,
-                                onChanged: (val) {
-                                  controller.onChangeValue_2(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_2,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_2(p0),
                               ),
-                              Radio(
+                              Radio_Widget(
                                 value: 'no',
-                                groupValue: controller.selectedValue_2,
-                                onChanged: (val) {
-                                  controller.onChangeValue_2(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_2,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_2(p0),
                               ),
-                              Radio(
+                              Radio_Widget(
                                 value: 'na',
-                                groupValue: controller.selectedValue_2,
-                                onChanged: (val) {
-                                  controller.onChangeValue_2(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_2,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_2(p0),
                               ),
                               text_field_widget(
                                   textController: controller.comment_2,
@@ -172,35 +148,23 @@ class F025 extends StatelessWidget {
                               text_widget(
                                   text: 'Food and solid items laying around',
                                   size: 16.0),
-                              Radio(
+                              Radio_Widget(
                                 value: 'yes',
-                                groupValue: controller.selectedValue_3,
-                                onChanged: (val) {
-                                  controller.onChangeValue_3(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_3,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_3(p0),
                               ),
-                              Radio(
+                              Radio_Widget(
                                 value: 'no',
-                                groupValue: controller.selectedValue_3,
-                                onChanged: (val) {
-                                  controller.onChangeValue_3(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_3,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_3(p0),
                               ),
-                              Radio(
+                              Radio_Widget(
                                 value: 'na',
-                                groupValue: controller.selectedValue_3,
-                                onChanged: (val) {
-                                  controller.onChangeValue_3(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_3,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_3(p0),
                               ),
                               text_field_widget(
                                   textController: controller.comment_3,
@@ -212,35 +176,23 @@ class F025 extends StatelessWidget {
                                   text:
                                       'Wires or Caples across floor where someone can trip',
                                   size: 16.0),
-                              Radio(
+                              Radio_Widget(
                                 value: 'yes',
-                                groupValue: controller.selectedValue_4,
-                                onChanged: (val) {
-                                  controller.onChangeValue_4(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_4,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_4(p0),
                               ),
-                              Radio(
+                              Radio_Widget(
                                 value: 'no',
-                                groupValue: controller.selectedValue_4,
-                                onChanged: (val) {
-                                  controller.onChangeValue_4(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_4,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_4(p0),
                               ),
-                              Radio(
+                              Radio_Widget(
                                 value: 'na',
-                                groupValue: controller.selectedValue_4,
-                                onChanged: (val) {
-                                  controller.onChangeValue_4(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_4,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_4(p0),
                               ),
                               text_field_widget(
                                   textController: controller.comment_4,
@@ -252,35 +204,23 @@ class F025 extends StatelessWidget {
                                   text:
                                       'Light adequate for patient care and comfort',
                                   size: 16.0),
-                              Radio(
+                              Radio_Widget(
                                 value: 'yes',
-                                groupValue: controller.selectedValue_5,
-                                onChanged: (val) {
-                                  controller.onChangeValue_5(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_5,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_5(p0),
                               ),
-                              Radio(
+                              Radio_Widget(
                                 value: 'no',
-                                groupValue: controller.selectedValue_5,
-                                onChanged: (val) {
-                                  controller.onChangeValue_5(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_5,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_5(p0),
                               ),
-                              Radio(
+                              Radio_Widget(
                                 value: 'na',
-                                groupValue: controller.selectedValue_5,
-                                onChanged: (val) {
-                                  controller.onChangeValue_5(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_5,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_5(p0),
                               ),
                               text_field_widget(
                                   textController: controller.comment_5,
@@ -290,35 +230,23 @@ class F025 extends StatelessWidget {
                             TableRow(children: [
                               text_widget(
                                   text: 'Easy access to patient', size: 16.0),
-                              Radio(
+                              Radio_Widget(
                                 value: 'yes',
-                                groupValue: controller.selectedValue_6,
-                                onChanged: (val) {
-                                  controller.onChangeValue_6(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_6,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_6(p0),
                               ),
-                              Radio(
+                              Radio_Widget(
                                 value: 'no',
-                                groupValue: controller.selectedValue_6,
-                                onChanged: (val) {
-                                  controller.onChangeValue_6(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_6,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_6(p0),
                               ),
-                              Radio(
+                              Radio_Widget(
                                 value: 'na',
-                                groupValue: controller.selectedValue_6,
-                                onChanged: (val) {
-                                  controller.onChangeValue_6(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_6,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_6(p0),
                               ),
                               text_field_widget(
                                   textController: controller.comment_6,
@@ -328,35 +256,23 @@ class F025 extends StatelessWidget {
                             TableRow(children: [
                               text_widget(
                                   text: 'Hand rails on stairway', size: 16.0),
-                              Radio(
+                              Radio_Widget(
                                 value: 'yes',
-                                groupValue: controller.selectedValue_7,
-                                onChanged: (val) {
-                                  controller.onChangeValue_7(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_7,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_7(p0),
                               ),
-                              Radio(
+                              Radio_Widget(
                                 value: 'no',
-                                groupValue: controller.selectedValue_7,
-                                onChanged: (val) {
-                                  controller.onChangeValue_7(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_7,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_7(p0),
                               ),
-                              Radio(
+                              Radio_Widget(
                                 value: 'na',
-                                groupValue: controller.selectedValue_7,
-                                onChanged: (val) {
-                                  controller.onChangeValue_7(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_7,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_7(p0),
                               ),
                               text_field_widget(
                                   textController: controller.comment_7,
@@ -368,35 +284,23 @@ class F025 extends StatelessWidget {
                                   text:
                                       'For ambulatory patient, clear path to bathroom',
                                   size: 16.0),
-                              Radio(
+                              Radio_Widget(
                                 value: 'yes',
-                                groupValue: controller.selectedValue_8,
-                                onChanged: (val) {
-                                  controller.onChangeValue_8(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_8,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_8(p0),
                               ),
-                              Radio(
+                              Radio_Widget(
                                 value: 'no',
-                                groupValue: controller.selectedValue_8,
-                                onChanged: (val) {
-                                  controller.onChangeValue_8(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_8,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_8(p0),
                               ),
-                              Radio(
+                              Radio_Widget(
                                 value: 'na',
-                                groupValue: controller.selectedValue_8,
-                                onChanged: (val) {
-                                  controller.onChangeValue_8(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_8,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_8(p0),
                               ),
                               text_field_widget(
                                   textController: controller.comment_8,
@@ -407,35 +311,23 @@ class F025 extends StatelessWidget {
                               text_widget(
                                   text: 'Grab rail for patient in shower/tub',
                                   size: 16.0),
-                              Radio(
+                              Radio_Widget(
                                 value: 'yes',
-                                groupValue: controller.selectedValue_9,
-                                onChanged: (val) {
-                                  controller.onChangeValue_9(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_9,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_9(p0),
                               ),
-                              Radio(
+                              Radio_Widget(
                                 value: 'no',
-                                groupValue: controller.selectedValue_9,
-                                onChanged: (val) {
-                                  controller.onChangeValue_9(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_9,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_9(p0),
                               ),
-                              Radio(
+                              Radio_Widget(
                                 value: 'na',
-                                groupValue: controller.selectedValue_9,
-                                onChanged: (val) {
-                                  controller.onChangeValue_9(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_9,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_9(p0),
                               ),
                               text_field_widget(
                                   textController: controller.comment_9,
@@ -446,35 +338,23 @@ class F025 extends StatelessWidget {
                               text_widget(
                                   text: 'Non slip surface in shower/tub',
                                   size: 16.0),
-                              Radio(
+                              Radio_Widget(
                                 value: 'yes',
-                                groupValue: controller.selectedValue_10,
-                                onChanged: (val) {
-                                  controller.onChangeValue_10(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_10,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_10(p0),
                               ),
-                              Radio(
+                              Radio_Widget(
                                 value: 'no',
-                                groupValue: controller.selectedValue_10,
-                                onChanged: (val) {
-                                  controller.onChangeValue_10(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_10,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_10(p0),
                               ),
-                              Radio(
+                              Radio_Widget(
                                 value: 'na',
-                                groupValue: controller.selectedValue_10,
-                                onChanged: (val) {
-                                  controller.onChangeValue_10(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_10,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_10(p0),
                               ),
                               text_field_widget(
                                   textController: controller.comment_10,
@@ -483,36 +363,26 @@ class F025 extends StatelessWidget {
                             ]),
                             TableRow(children: [
                               text_widget(
-                                  text: 'For bedbound patient on high bed with side rails', size: 16.0),
-                              Radio(
+                                  text:
+                                      'For bedbound patient on high bed with side rails',
+                                  size: 16.0),
+                              Radio_Widget(
                                 value: 'yes',
-                                groupValue: controller.selectedValue_11,
-                                onChanged: (val) {
-                                  controller.onChangeValue_11(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_11,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_11(p0),
                               ),
-                              Radio(
+                              Radio_Widget(
                                 value: 'no',
-                                groupValue: controller.selectedValue_11,
-                                onChanged: (val) {
-                                  controller.onChangeValue_11(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_11,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_11(p0),
                               ),
-                              Radio(
+                              Radio_Widget(
                                 value: 'na',
-                                groupValue: controller.selectedValue_11,
-                                onChanged: (val) {
-                                  controller.onChangeValue_11(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_11,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_11(p0),
                               ),
                               text_field_widget(
                                   textController: controller.comment_11,
@@ -521,36 +391,25 @@ class F025 extends StatelessWidget {
                             ]),
                             TableRow(children: [
                               text_widget(
-                                  text: 'Restraints used? Explain reasons', size: 16.0),
-                              Radio(
+                                  text: 'Restraints used? Explain reasons',
+                                  size: 16.0),
+                              Radio_Widget(
                                 value: 'yes',
-                                groupValue: controller.selectedValue_12,
-                                onChanged: (val) {
-                                  controller.onChangeValue_12(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_12,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_12(p0),
                               ),
-                              Radio(
+                              Radio_Widget(
                                 value: 'no',
-                                groupValue: controller.selectedValue_12,
-                                onChanged: (val) {
-                                  controller.onChangeValue_12(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_12,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_12(p0),
                               ),
-                              Radio(
+                              Radio_Widget(
                                 value: 'na',
-                                groupValue: controller.selectedValue_12,
-                                onChanged: (val) {
-                                  controller.onChangeValue_12(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_12,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_12(p0),
                               ),
                               text_field_widget(
                                   textController: controller.comment_12,
@@ -562,35 +421,23 @@ class F025 extends StatelessWidget {
                                   text:
                                       'Patient/Patient family using correct way to transfer and change position of patient.',
                                   size: 16.0),
-                              Radio(
+                              Radio_Widget(
                                 value: 'yes',
-                                groupValue: controller.selectedValue_13,
-                                onChanged: (val) {
-                                  controller.onChangeValue_13(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_13,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_13(p0),
                               ),
-                              Radio(
+                              Radio_Widget(
                                 value: 'no',
-                                groupValue: controller.selectedValue_13,
-                                onChanged: (val) {
-                                  controller.onChangeValue_13(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_13,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_13(p0),
                               ),
-                              Radio(
+                              Radio_Widget(
                                 value: 'na',
-                                groupValue: controller.selectedValue_13,
-                                onChanged: (val) {
-                                  controller.onChangeValue_13(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_13,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_13(p0),
                               ),
                               text_field_widget(
                                   textController: controller.comment_13,
@@ -599,37 +446,26 @@ class F025 extends StatelessWidget {
                             ]),
                             TableRow(children: [
                               text_widget(
-                                  text: 'For ambulatory patient wearing safe footwear',
+                                  text:
+                                      'For ambulatory patient wearing safe footwear',
                                   size: 16.0),
-                              Radio(
+                              Radio_Widget(
                                 value: 'yes',
-                                groupValue: controller.selectedValue_14,
-                                onChanged: (val) {
-                                  controller.onChangeValue_14(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_14,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_14(p0),
                               ),
-                              Radio(
+                              Radio_Widget(
                                 value: 'no',
-                                groupValue: controller.selectedValue_14,
-                                onChanged: (val) {
-                                  controller.onChangeValue_14(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_14,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_14(p0),
                               ),
-                              Radio(
+                              Radio_Widget(
                                 value: 'na',
-                                groupValue: controller.selectedValue_14,
-                                onChanged: (val) {
-                                  controller.onChangeValue_14(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_14,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_14(p0),
                               ),
                               text_field_widget(
                                   textController: controller.comment_14,
@@ -638,37 +474,26 @@ class F025 extends StatelessWidget {
                             ]),
                             TableRow(children: [
                               text_widget(
-                                  text: 'Patient who is dependent has alarm bell to call for assistance',
+                                  text:
+                                      'Patient who is dependent has alarm bell to call for assistance',
                                   size: 16.0),
-                              Radio(
+                              Radio_Widget(
                                 value: 'yes',
-                                groupValue: controller.selectedValue_15,
-                                onChanged: (val) {
-                                  controller.onChangeValue_15(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_15,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_15(p0),
                               ),
-                              Radio(
+                              Radio_Widget(
                                 value: 'no',
-                                groupValue: controller.selectedValue_15,
-                                onChanged: (val) {
-                                  controller.onChangeValue_15(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_15,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_15(p0),
                               ),
-                              Radio(
+                              Radio_Widget(
                                 value: 'na',
-                                groupValue: controller.selectedValue_15,
-                                onChanged: (val) {
-                                  controller.onChangeValue_15(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_15,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_15(p0),
                               ),
                               text_field_widget(
                                   textController: controller.comment_15,
@@ -676,8 +501,8 @@ class F025 extends StatelessWidget {
                                   width: 200.0),
                             ]),
                           ]),
-                    //====================== Table Two ===========================
-                    Table(
+                      //====================== Table Two ===========================
+                      Table(
                           columnWidths: const {
                             0: FlexColumnWidth(20),
                             1: FlexColumnWidth(2),
@@ -709,35 +534,23 @@ class F025 extends StatelessWidget {
                               text_widget(
                                   text: 'Safe plug for medical equipment',
                                   size: 16.0),
-                              Radio(
+                              Radio_Widget(
                                 value: 'yes',
-                                groupValue: controller.selectedValue_16,
-                                onChanged: (val) {
-                                  controller.onChangeValue_16(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_16,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_16(p0),
                               ),
-                              Radio(
+                              Radio_Widget(
                                 value: 'no',
-                                groupValue: controller.selectedValue_16,
-                                onChanged: (val) {
-                                  controller.onChangeValue_16(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_16,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_16(p0),
                               ),
-                              Radio(
+                              Radio_Widget(
                                 value: 'na',
-                                groupValue: controller.selectedValue_16,
-                                onChanged: (val) {
-                                  controller.onChangeValue_16(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_16,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_16(p0),
                               ),
                               text_field_widget(
                                   textController: controller.comment_16,
@@ -746,37 +559,26 @@ class F025 extends StatelessWidget {
                             ]),
                             TableRow(children: [
                               text_widget(
-                                  text: 'Family trained in use and safety of equipment’s',
+                                  text:
+                                      'Family trained in use and safety of equipment is',
                                   size: 16.0),
-                              Radio(
+                              Radio_Widget(
                                 value: 'yes',
-                                groupValue: controller.selectedValue_17,
-                                onChanged: (val) {
-                                  controller.onChangeValue_17(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_17,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_17(p0),
                               ),
-                              Radio(
+                              Radio_Widget(
                                 value: 'no',
-                                groupValue: controller.selectedValue_17,
-                                onChanged: (val) {
-                                  controller.onChangeValue_17(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_17,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_17(p0),
                               ),
-                              Radio(
+                              Radio_Widget(
                                 value: 'na',
-                                groupValue: controller.selectedValue_17,
-                                onChanged: (val) {
-                                  controller.onChangeValue_17(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_17,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_17(p0),
                               ),
                               text_field_widget(
                                   textController: controller.comment_17,
@@ -785,37 +587,26 @@ class F025 extends StatelessWidget {
                             ]),
                             TableRow(children: [
                               text_widget(
-                                  text: 'Maintenance checks done on equipment’s',
+                                  text:
+                                      'Maintenance checks done on equipment’s',
                                   size: 16.0),
-                              Radio(
+                              Radio_Widget(
                                 value: 'yes',
-                                groupValue: controller.selectedValue_18,
-                                onChanged: (val) {
-                                  controller.onChangeValue_18(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_18,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_18(p0),
                               ),
-                              Radio(
+                              Radio_Widget(
                                 value: 'no',
-                                groupValue: controller.selectedValue_18,
-                                onChanged: (val) {
-                                  controller.onChangeValue_18(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_18,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_18(p0),
                               ),
-                              Radio(
+                              Radio_Widget(
                                 value: 'na',
-                                groupValue: controller.selectedValue_18,
-                                onChanged: (val) {
-                                  controller.onChangeValue_18(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_18,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_18(p0),
                               ),
                               text_field_widget(
                                   textController: controller.comment_18,
@@ -827,35 +618,23 @@ class F025 extends StatelessWidget {
                                   text:
                                       'If there is O2 in place, is there a no smoking sign visible?',
                                   size: 16.0),
-                              Radio(
+                              Radio_Widget(
                                 value: 'yes',
-                                groupValue: controller.selectedValue_19,
-                                onChanged: (val) {
-                                  controller.onChangeValue_19(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_19,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_19(p0),
                               ),
-                              Radio(
+                              Radio_Widget(
                                 value: 'no',
-                                groupValue: controller.selectedValue_19,
-                                onChanged: (val) {
-                                  controller.onChangeValue_19(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_19,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_19(p0),
                               ),
-                              Radio(
+                              Radio_Widget(
                                 value: 'na',
-                                groupValue: controller.selectedValue_19,
-                                onChanged: (val) {
-                                  controller.onChangeValue_19(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_19,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_19(p0),
                               ),
                               text_field_widget(
                                   textController: controller.comment_19,
@@ -865,37 +644,25 @@ class F025 extends StatelessWidget {
                             TableRow(children: [
                               text_widget(
                                   text:
-                                      'All equipment’s (bed, wheelchair, etc.) in safe working condition',
+                                      'All equipment is (bed, wheelchair, etc.) in safe working condition',
                                   size: 16.0),
-                              Radio(
+                              Radio_Widget(
                                 value: 'yes',
-                                groupValue: controller.selectedValue_20,
-                                onChanged: (val) {
-                                  controller.onChangeValue_20(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_20,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_20(p0),
                               ),
-                              Radio(
+                              Radio_Widget(
                                 value: 'no',
-                                groupValue: controller.selectedValue_20,
-                                onChanged: (val) {
-                                  controller.onChangeValue_20(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_20,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_20(p0),
                               ),
-                              Radio(
+                              Radio_Widget(
                                 value: 'na',
-                                groupValue: controller.selectedValue_20,
-                                onChanged: (val) {
-                                  controller.onChangeValue_20(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_20,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_20(p0),
                               ),
                               text_field_widget(
                                   textController: controller.comment_20,
@@ -904,36 +671,26 @@ class F025 extends StatelessWidget {
                             ]),
                             TableRow(children: [
                               text_widget(
-                                  text: 'Medication in date and stored safety away from children', size: 16.0),
-                              Radio(
+                                  text:
+                                      'Medication in date and stored safety away from children',
+                                  size: 16.0),
+                              Radio_Widget(
                                 value: 'yes',
-                                groupValue: controller.selectedValue_21,
-                                onChanged: (val) {
-                                  controller.onChangeValue_21(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_21,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_21(p0),
                               ),
-                              Radio(
+                              Radio_Widget(
                                 value: 'no',
-                                groupValue: controller.selectedValue_21,
-                                onChanged: (val) {
-                                  controller.onChangeValue_21(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_21,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_21(p0),
                               ),
-                              Radio(
+                              Radio_Widget(
                                 value: 'na',
-                                groupValue: controller.selectedValue_21,
-                                onChanged: (val) {
-                                  controller.onChangeValue_21(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_21,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_21(p0),
                               ),
                               text_field_widget(
                                   textController: controller.comment_21,
@@ -942,45 +699,33 @@ class F025 extends StatelessWidget {
                             ]),
                             TableRow(children: [
                               text_widget(
-                                  text: 'Medication storage with accepted temperature', size: 16.0),
-                              Radio(
+                                  text:
+                                      'Medication storage with accepted temperature',
+                                  size: 16.0),
+                              Radio_Widget(
                                 value: 'yes',
-                                groupValue: controller.selectedValue_22,
-                                onChanged: (val) {
-                                  controller.onChangeValue_22(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_22,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_22(p0),
                               ),
-                              Radio(
+                              Radio_Widget(
                                 value: 'no',
-                                groupValue: controller.selectedValue_22,
-                                onChanged: (val) {
-                                  controller.onChangeValue_22(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_22,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_22(p0),
                               ),
-                              Radio(
+                              Radio_Widget(
                                 value: 'na',
-                                groupValue: controller.selectedValue_22,
-                                onChanged: (val) {
-                                  controller.onChangeValue_22(val);
-                                },
-                                activeColor: Colors.teal.shade400,
-                                fillColor: MaterialStatePropertyAll(
-                                    Colors.teal.shade400),
+                                extController: controller.selectedValue_22,
+                                onChanged: (p0) =>
+                                    controller.onChangeValue_22(p0),
                               ),
                               text_field_widget(
                                   textController: controller.comment_22,
                                   height: 40.0,
                                   width: 200.0),
                             ]),
-                            
                           ]),
-                    
                     ],
                   ),
                 ),
@@ -1017,6 +762,10 @@ class F025 extends StatelessWidget {
                     ),
                   ),
                 ],
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 20.0),
+                child: Divider(),
               ),
               //========================================= Page Two ==========================================
               Row(
@@ -1152,6 +901,29 @@ class F025 extends StatelessWidget {
           ),
         );
       },
+    );
+  }
+}
+
+class Radio_Widget extends StatelessWidget {
+  final String value;
+  final Object? extController;
+  void Function(Object?)? onChanged;
+  Radio_Widget({
+    super.key,
+    required this.extController,
+    required this.onChanged,
+    required this.value,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Radio(
+      value: value,
+      groupValue: extController,
+      onChanged: onChanged,
+      activeColor: Colors.teal.shade400,
+      fillColor: MaterialStatePropertyAll(Colors.teal.shade400),
     );
   }
 }
