@@ -1,4 +1,4 @@
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
+// ignore_for_file: non_constant_identifier_names, prefer_final_fields, file_names
 
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
