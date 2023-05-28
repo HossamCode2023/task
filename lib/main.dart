@@ -3,7 +3,8 @@ import 'package:get/get.dart';
 import 'package:responsive_framework/responsive_wrapper.dart';
 import 'package:responsive_framework/utils/scroll_behavior.dart';
 
-import 'f029/f029.dart';
+import 'form024-form034/f025/f025.dart';
+import 'form024-form034/f029/f029.dart';
 
 void main() {
     WidgetsFlutterBinding.ensureInitialized();

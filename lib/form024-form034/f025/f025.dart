@@ -1,6 +1,8 @@
 // ignore_for_file: must_be_immutable, avoid_unnecessary_containers, camel_case_types, prefer_const_constructors, sized_box_for_whitespace, non_constant_identifier_names
 
+
 import 'package:flutter/material.dart';
+import 'package:formproject/form024-form034/widgets024=034.dart';
 import 'package:get/get.dart';
 
 import 'f025Controller.dart';
@@ -19,41 +21,7 @@ class F025 extends StatelessWidget {
           body: ListView(
             children: [
               //========================================= Page One ==========================================
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Container(
-                    height: 75.0,
-                    width: screenWidth / 4,
-                    child: Image.asset('assets/images/log.png'),
-                  ),
-                  const Padding(
-                    padding: EdgeInsets.only(top: 20.0),
-                    child: Text(
-                      "Acknowledgement receipt for equipment form",
-                      style: TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold,
-                          color: Color.fromRGBO(33, 33, 33, 1)),
-                    ),
-                  ),
-                  Container(
-                    height: 100.0,
-                    width: 200.0,
-                    decoration: BoxDecoration(
-                      border: Border.all(color: Colors.black),
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.only(bottom: 50.0),
-                      child: Center(
-                          child: Text(
-                        'PLACE PATIENT LABEL',
-                        style: TextStyle(fontSize: 12.0),
-                      )),
-                    ),
-                  ),
-                ],
-              ),
+              TopPageWithLable(screenWidth: screenWidth,title: "Acknowledgement receipt for equipment form"),
               // ============================ Table ====================================================================
               Padding(
                 padding: const EdgeInsets.symmetric(
@@ -750,59 +718,13 @@ class F025 extends StatelessWidget {
                       '________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________',
                 ),
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.only(
-                        top: 20.0, right: 100.0, bottom: 20.0),
-                    child: text_widget(
-                      text: 'F025-THHC Home Safety Assessment Form',
-                      size: 14.0,
-                    ),
-                  ),
-                ],
-              ),
+              BottomPage(pageNumber: '1',titleForm: 'F025-THHC Home Safety Assessment Form'),
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 20.0),
                 child: Divider(),
               ),
               //========================================= Page Two ==========================================
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Container(
-                    height: 75.0,
-                    width: screenWidth / 4,
-                    child: Image.asset('assets/images/log.png'),
-                  ),
-                  const Padding(
-                    padding: EdgeInsets.only(top: 20.0),
-                    child: Text(
-                      "Acknowledgement receipt for equipment form",
-                      style: TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold,
-                          color: Color.fromRGBO(33, 33, 33, 1)),
-                    ),
-                  ),
-                  Container(
-                    height: 100.0,
-                    width: 200.0,
-                    decoration: BoxDecoration(
-                      border: Border.all(color: Colors.black),
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.only(bottom: 50.0),
-                      child: Center(
-                          child: Text(
-                        'PLACE PATIENT LABEL',
-                        style: TextStyle(fontSize: 12.0),
-                      )),
-                    ),
-                  ),
-                ],
-              ),
+              TopPageWithLable(screenWidth: screenWidth, title: "Acknowledgement receipt for equipment form"),
               Padding(
                 padding: const EdgeInsets.only(left: 250.0, top: 10.0),
                 child: text_widget(
@@ -884,19 +806,7 @@ class F025 extends StatelessWidget {
                   ],
                 ),
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.only(
-                        top: 20.0, right: 100.0, bottom: 20.0),
-                    child: text_widget(
-                      text: 'F025-THHC Home Safety Assessment Form',
-                      size: 14.0,
-                    ),
-                  ),
-                ],
-              ),
+              BottomPage(pageNumber: '2', titleForm: 'F025-THHC Home Safety Assessment Form'),
             ],
           ),
         );
@@ -904,6 +814,8 @@ class F025 extends StatelessWidget {
     );
   }
 }
+
+
 
 class Radio_Widget extends StatelessWidget {
   final String value;
@@ -982,11 +894,12 @@ class text_widget extends StatelessWidget {
   FontWeight? weight;
   @override
   Widget build(BuildContext context) {
+    final screenWidth = MediaQuery.of(context).size.width;
     return Container(
       padding: EdgeInsets.only(left: 10.0),
       child: Text(
         text,
-        style: TextStyle(fontSize: size, fontWeight: weight),
+        style: TextStyle(fontSize: 1.9*screenWidth*0.01, fontWeight: weight),
       ),
     );
   }
