@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:responsive_framework/responsive_wrapper.dart';
 import 'package:responsive_framework/utils/scroll_behavior.dart';
 
-import 'f027/f027.dart';
+import 'f029/f029.dart';
 
 void main() {
     WidgetsFlutterBinding.ensureInitialized();
@@ -42,7 +42,7 @@ class MyApp extends StatelessWidget {
         
         primarySwatch: Colors.blue,
       ),
-      home:  const F027(),
+      home:  const F029(),
     );
   }
 }
