@@ -4,7 +4,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
-
 class F031Controller extends GetxController {
   DateTime now = DateTime.now();
   String dateMonth = DateFormat.yMMMM().format(DateTime.now());

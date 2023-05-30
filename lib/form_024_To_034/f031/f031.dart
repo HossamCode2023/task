@@ -1,4 +1,4 @@
-// ignore_for_file: must_be_immutable, avoid_unnecessary_containers, camel_case_types, prefer_const_constructors, sized_box_for_whitespace
+// ignore_for_file: must_be_immutable, avoid_unnecessary_containers, camel_case_types, prefer_const_constructors, sized_box_for_whitespace, avoid_print, non_constant_identifier_names
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -11,12 +11,11 @@ class F031 extends StatelessWidget {
   List<TableRowData> tableData = List.generate(31, (_) => TableRowData());
   List<List<TextEditingController>> textControllers = List.generate(
       31, (_) => List.generate(4, (_) => TextEditingController()));
-      final List<String> columnTitles = [
+  final List<String> columnTitles = [
     'Date',
     'CLEANING DONE (TIME)',
     'SIGN & BADGE',
     'REMARKS',
-   
   ];
 
   @override
@@ -46,14 +45,13 @@ class F031 extends StatelessWidget {
                           text: 'EQUIPMENT: ',
                           size: 18.0,
                         ),
-                         text_field_widget(
-                      width: screenWidth / 5,
-                      textController: controller.Equipment,
-                      type: TextInputType.name,
-                    ),
+                        text_field_widget(
+                          width: screenWidth / 5,
+                          textController: controller.Equipment,
+                          type: TextInputType.name,
+                        ),
                       ],
                     ),
-                   
                     Row(
                       children: [
                         text_widget(
@@ -63,13 +61,12 @@ class F031 extends StatelessWidget {
                           size: 18.0,
                         ),
                         text_field_widget(
-                      width: screenWidth / 5,
-                      textController: controller.serialNo,
-                      type: TextInputType.number,
-                    ),
+                          width: screenWidth / 5,
+                          textController: controller.serialNo,
+                          type: TextInputType.number,
+                        ),
                       ],
                     ),
-                    
                     Row(
                       children: [
                         text_widget(
@@ -79,14 +76,13 @@ class F031 extends StatelessWidget {
                           size: 18.0,
                         ),
                         text_widget(
-                      horizontalPadding: 0.0,
-                      verticalPadding: 0.0,
-                      text: controller.dateMonth,
-                      size: 18.0,
-                    ),
+                          horizontalPadding: 0.0,
+                          verticalPadding: 0.0,
+                          text: controller.dateMonth,
+                          size: 18.0,
+                        ),
                       ],
                     ),
-                    
                   ],
                 ),
               ),
@@ -103,7 +99,6 @@ class F031 extends StatelessWidget {
                             1: FlexColumnWidth(2),
                             2: FlexColumnWidth(2),
                             3: FlexColumnWidth(2),
-                          
                           },
                           border: TableBorder.all(),
                           children: [
@@ -113,9 +108,7 @@ class F031 extends StatelessWidget {
                               TitleText(columnTitles[1]),
                               TitleText(columnTitles[2]),
                               TitleText(columnTitles[3]),
-                              
                             ]),
-                           
                           ]),
                     ],
                   ),
@@ -135,19 +128,14 @@ class F031 extends StatelessWidget {
                           1: FlexColumnWidth(2),
                           2: FlexColumnWidth(2),
                           3: FlexColumnWidth(2),
-                         
                         },
-                       
-
-                        children:                      
-
-                           List.generate(tableData.length, (rowIndex) {
+                        children: List.generate(tableData.length, (rowIndex) {
                           final row = tableData[rowIndex];
                           return TableRow(children: [
-                            
                             for (int i = 0; i < 4; i++)
                               TableCell(
                                   child: TextField(
+                                      textAlign: TextAlign.center,
                                       controller: textControllers[rowIndex][i],
                                       onChanged: (value) {
                                         switch (i) {
@@ -163,7 +151,6 @@ class F031 extends StatelessWidget {
                                           case 3:
                                             row.column4 = value;
                                             break;
-                                          
                                         }
                                       }))
                           ]);
@@ -173,39 +160,43 @@ class F031 extends StatelessWidget {
                   ),
                 ),
               ),
-              
+
               Center(
                 child: Container(
-                  width: screenWidth/4,
+                  width: screenWidth / 4,
                   height: 50.0,
                   margin: EdgeInsets.symmetric(vertical: 20.0),
                   child: MaterialButton(
-                   
                     color: Colors.teal.shade400,
-                child: Text('Save',style: TextStyle(fontSize: 18.0,color: Colors.white,fontWeight: FontWeight.bold),),
-                onPressed: () {
-                // Save data to GetX controllers
-                
-                controller.column1 =
-                tableData.map((row) => row.column1).toList();
-                controller.column2 =
-                tableData.map((row) => row.column2).toList();
-                controller.column3 =
-                tableData.map((row) => row.column3).toList();
-                controller.column4 =
-                tableData.map((row) => row.column4).toList();
-                
-                controller.update();
-                print(controller.column1);
-                },
-                ),
+                    child: Text(
+                      'Save',
+                      style: TextStyle(
+                          fontSize: 18.0,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold),
+                    ),
+                    onPressed: () {
+                      // Save data to GetX controllers
+
+                      controller.column1 =
+                          tableData.map((row) => row.column1).toList();
+                      controller.column2 =
+                          tableData.map((row) => row.column2).toList();
+                      controller.column3 =
+                          tableData.map((row) => row.column3).toList();
+                      controller.column4 =
+                          tableData.map((row) => row.column4).toList();
+
+                      controller.update();
+                      print(controller.column1);
+                    },
+                  ),
                 ),
               ),
-              
+
               BottomPage(
                   pageNumber: '',
-                  titleForm:
-                      'F031-THHC Daily Equipment Cleaning forms '),
+                  titleForm: 'F031-THHC Daily Equipment Cleaning forms '),
             ],
           ),
         );
@@ -227,20 +218,16 @@ Widget TitleText(String title) {
   );
 }
 
-
-
 class TableRowData {
   String column1;
   String column2;
   String column3;
   String column4;
-  
 
   TableRowData({
     this.column1 = '',
     this.column2 = '',
     this.column3 = '',
     this.column4 = '',
-    
   });
 }

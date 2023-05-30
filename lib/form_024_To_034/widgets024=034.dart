@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, file_names, sized_box_for_whitespace, must_be_immutable, camel_case_types, type_init_formals
 
 import 'package:flutter/material.dart';
 
@@ -27,7 +27,7 @@ class BottomPage extends StatelessWidget {
         ),
         Padding(
            padding: const EdgeInsets.only(top: 20.0, right: 100.0, bottom: 20.0),
-          child: Text(pageNumber,style: TextStyle(fontSize: 12.0),),
+          child: Text(pageNumber,style: TextStyle(fontSize: 1.9*screenWidth*0.01),),
         )
       ],
     );
@@ -70,25 +70,28 @@ class TopPage extends StatelessWidget {
     );
   }
 }
-//  color: Color.fromRGBO(33, 33, 33, 1)
+
 
 class text_field_widget extends StatelessWidget {
   text_field_widget({
     super.key,
     required this.textController,
     required this.width,
+  
     this.type,
   });
 
   final double width;
   TextEditingController textController;
   TextInputType? type;
+ 
 
   @override
   Widget build(BuildContext context) {
     return Container(
       width: width,
       child: TextField(
+       textAlign: TextAlign.center,
         keyboardType: type,
         controller: textController,
       ),
@@ -133,10 +136,12 @@ class TopPageWithLable extends StatelessWidget {
     super.key,
     required this.screenWidth,
     required this.title,
+    required this.lable,
   });
 
   final double screenWidth;
   final dynamic title;
+  final TextEditingController lable;
 
   @override
   Widget build(BuildContext context) {
@@ -159,18 +164,23 @@ class TopPageWithLable extends StatelessWidget {
           ),
         ),
         Container(
-          height: 100.0,
+          height: 110.0,
           width: 200.0,
           decoration: BoxDecoration(
             border: Border.all(color: Colors.black),
           ),
           child: Padding(
-            padding: const EdgeInsets.only(bottom: 50.0),
+            padding: const EdgeInsets.only(bottom: 0.0),
             child: Center(
-                child: Text(
-              'PLACE PATIENT LABEL',
-              style: TextStyle(fontSize: 12.0),
-            )),
+                child: Column(
+                  children: [
+                    Text('PLACE PATIENT LABLE'),
+                    text_field_widget(
+                    
+                      textController: lable, width: 150),
+                  ],
+                )
+            ),
           ),
         ),
       ],

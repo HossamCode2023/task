@@ -18,10 +18,6 @@ class F024Controller extends GetxController {
   bool otherValue = false;
 
 
-
-
-
-
 DateTime now = DateTime.now();
   String dateMonth = DateFormat.j().format(DateTime.now());
     var employeeName = TextEditingController();
@@ -29,19 +25,13 @@ DateTime now = DateTime.now();
     var cardNumber = TextEditingController();
     var cellularPhone = TextEditingController();
     var laptop = TextEditingController();
-    var equipmentList_1 = TextEditingController();
-    var equipmentList_2 = TextEditingController();
-    var equipmentList_3 = TextEditingController();
-    var equipmentList_4 = TextEditingController();
-    var equipmentList_5 = TextEditingController();
-    var equipmentList_6 = TextEditingController();
+   
     var other = TextEditingController();
 
 
+List<TextEditingController> equipmentList = List.generate(6, (_) => TextEditingController());
 
-
-  //     var text1 = TextEditingController();
-  // bool value = false;
+ 
   sendtoapi(F024Model model) {}
 
   

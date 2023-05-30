@@ -1,4 +1,4 @@
-// ignore_for_file: must_be_immutable, avoid_unnecessary_containers, camel_case_types, prefer_const_constructors, sized_box_for_whitespace
+// ignore_for_file: must_be_immutable, avoid_unnecessary_containers, camel_case_types, prefer_const_constructors, sized_box_for_whitespace, avoid_print
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -193,30 +193,11 @@ class F024 extends StatelessWidget {
                   ],
                 ),
               ),
-              equipment_list_widget(
+              for(int i = 0 ; i < 6 ; i++) equipment_list_widget(
                 screenWidth: screenWidth,
-                textController: controller.equipmentList_1,
+                textController: controller.equipmentList[0+i],
               ),
-              equipment_list_widget(
-                screenWidth: screenWidth,
-                textController: controller.equipmentList_2,
-              ),
-              equipment_list_widget(
-                screenWidth: screenWidth,
-                textController: controller.equipmentList_3,
-              ),
-              equipment_list_widget(
-                screenWidth: screenWidth,
-                textController: controller.equipmentList_4,
-              ),
-              equipment_list_widget(
-                screenWidth: screenWidth,
-                textController: controller.equipmentList_5,
-              ),
-              equipment_list_widget(
-                screenWidth: screenWidth,
-                textController: controller.equipmentList_6,
-              ),
+             
               Padding(
                 padding: const EdgeInsets.only(left: 350),
                 child: Row(
